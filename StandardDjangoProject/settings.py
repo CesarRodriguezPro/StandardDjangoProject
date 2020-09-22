@@ -17,7 +17,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_DIRS = [
     os.path.join(BASE_DIR, 'templates'),
     os.path.join(BASE_DIR, 'accounts', 'templates'),
-    os.path.join(BASE_DIR, 'users_area', 'templates'),
 ]
 
 # Quick-start development settings - unsuitable for production
@@ -43,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'accounts',
-    'users_area',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -137,5 +135,5 @@ STATICFILES_DIRS = STATIC_DIR
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # redirect paths
-LOGIN_REDIRECT_URL = 'users_area:home'
+LOGIN_REDIRECT_URL = 'UserArea'
 LOGOUT_REDIRECT_URL = '/'
