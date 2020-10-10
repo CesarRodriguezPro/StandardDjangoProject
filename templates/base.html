@@ -24,8 +24,8 @@
     <ul class="navbar-nav ml-auto">
       
         {% if user.is_authenticated %}
-              <li class="nav-item"><a class="nav-link"> {{user.username}}</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">User Area</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'accounts:profile' %}"> {{user.username}}</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'user_area' %}">User Area</a></li>
               <li class="nav-item"><a class="nav-link" href="{% url 'accounts:logout' %}">Log Out</a></li>
         {% else %}
             <li class="nav-item"><a class="nav-link" href="{% url 'accounts:login'%}">Log In</a></li>

@@ -135,5 +135,6 @@ STATICFILES_DIRS = STATIC_DIR
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # redirect paths
-LOGIN_REDIRECT_URL = 'UserArea'
+LOGIN_REDIRECT_URL = 'user_area'
 LOGOUT_REDIRECT_URL = '/'
+LOGIN_URL = 'accounts:login'
