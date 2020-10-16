@@ -9,10 +9,11 @@
 {% block content %}
 <div >
     <div >
-        <img  src="{{user.profile.image.url}}">
+        <img  src="{{user.image.url}}">
         <div>
             <h2>{{user.username}}</h2>
             <p>{{user.email}}</p>
+            <p>{{user.image.url}}</p>
         </div>
     </div>
 </div>
